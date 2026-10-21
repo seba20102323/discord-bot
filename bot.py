@@ -371,4 +371,4 @@ async def setup_ticket(ctx):
     embed.set_image(url="https://i.pinimg.com/1200x/12/9b/76/129b7630baa815012a13afb634f96d36.jpg")
     await ctx.send(embed=embed, view=TicketSelectView())
 
-bot.run(os.getanv("DISCORD_TOKEN"))
+bot.run(os.getenv("DISCORD_TOKEN"))
