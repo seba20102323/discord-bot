@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands, tasks
 from discord.ui import Select, View, Button
 import asyncio
@@ -370,4 +371,4 @@ async def setup_ticket(ctx):
     embed.set_image(url="https://i.pinimg.com/1200x/12/9b/76/129b7630baa815012a13afb634f96d36.jpg")
     await ctx.send(embed=embed, view=TicketSelectView())
 
-bot.run('MTU2MjQwNzM5NjQ0NDQ3MTQwNg.GatR4u.ZNvr5zno_J0nKJIWfTTdEywg8omb3riva7Y8ag')
+bot.run(os.getanv("DISCORD_TOKEN"))
